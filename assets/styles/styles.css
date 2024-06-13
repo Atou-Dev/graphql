@@ -1,0 +1,415 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Main profile container */
+.profile {
+    display: flex;
+    max-width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 0 0 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    border-radius: 10px 0 0 10px;
+}
+
+.profile-info {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-info h3 i {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #3b5998;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-info p i {
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #3b5998; /* Facebook blue */
+}
+
+.profile-info p span{
+   font-size: 25px;
+    font-weight: bold;
+    color: #3b5998; /* Facebook blue */
+    margin-left: 2%;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3b5998; /* Facebook blue */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button span {
+    margin-right: 5px;
+}
+
+/* Main content styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+header a span {
+    font-size: 24px;
+}
+
+.createdAt {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Statistics container */
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.div01, .audits, .projectsDone {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #3b5998; /* Facebook blue */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.div01 h3, .audits h3, .projectsDone h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.audits span {
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.audits i {
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.div01 h3 i, .audits h3 i, .projectsDone h3 i {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #fff; /* White icons */
+    
+    
+}
+
+.div01 span {
+
+    font-size: 40px;
+    margin-right: 1%;
+    margin-left: 1%;
+    
+}
+
+.audits span {
+
+    font-size: 40px;
+    margin-right: 1%;
+    margin-left: 1%;
+    
+}
+
+
+.div01 p, .audits p, .projectsDone p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.div01 p i, .audits p i, .projectsDone p i {
+    margin-right: 10px;
+    color: #fff; /* White icons */
+    font-weight: bold;
+}
+
+.projectsDone {
+    margin: 0; /* Reset margin for consistent alignment */
+}
+.projectsDone span {
+    font-size: 40px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+
+/* Remove right margin for the last child */
+.statistics > div:last-child {
+    margin-right: 0;
+}
+
+/* Graphs container */
+.graphs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 30%; /* Distribute height evenly */
+}
+
+.firstGraph, .secondGraph, .completed-projects {
+    flex-basis: 45%; /* Equal width for all children */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.firstGraph {
+    margin-right: 20px;
+}
+
+.secondGraph {
+    margin-right: 20px;
+}
+
+.completed-projects {
+    margin-right: 0;
+}
+
+.graph-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Completed projects section */
+.completed-projects h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.completed-projects ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.completed-projects ul li {
+    background-color: #3b5998; /* Facebook blue */
+    font-weight: bold;
+    color: #fff;
+    padding: 2%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    flex-basis: 27%; /* Adjust width for three columns */
+    margin-right: 10px;
+}
+
+.completed-projects ul li:nth-child(3n) {
+    margin-right: 0; /* Remove right margin for every third item */
+}
+
+/* Utility classes */
+span#userLastName, span#userFirstName {
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'URW Chancery L', cursive;
+    font-weight: bold;
+}
+
+
+/* General styles */
+body {   
+    height: 100vh;
+}
+
+
+
+.f {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #3b5998; 
+}
+.b {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.c {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    -webkit-box-shadow: -2px 0px 52px 24px rgba(0,0,0,0.22);
+    -moz-box-shadow: -2px 0px 52px 24px rgba(0,0,0,0.22);
+    box-shadow: -2px 0px 52px 24px rgba(0,0,0,0.22);
+    color: rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
+}
+.c .t {
+    width: 33.4%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.c .v {
+    width: 67.6%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.c .t .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.c .t img {
+    width: 30%;
+}
+.c .t h1 {
+    position: absolute;
+    top: 55%;
+}
+.c .t p {
+    position: absolute;
+    top: 65%;
+}
+.c .v .z {
+    position: absolute;
+    top: 1%;
+    left: 100%;
+    transform: translateX(-80px);
+}
+.c .v .x {
+    position: absolute;
+    top: 30%;
+    font-size: 3ex;
+    left: 45%;
+}
+.c .v .em, .c .v .ep {
+    position: absolute;
+    left: 20%;
+    font-size: 1.2em;
+}
+.c .v .em {
+    top: 45%;
+}
+.c .v .ep {
+    top: 60%;
+}
+input {
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 60%;
+    width: 50%;
+    border: 2px solid rgba(29, 28, 28, 0.568);
+}
+button {
+    background: #3b5998; 
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c .v #username, .c .v #password {
+    position: absolute;
+    left: 20%;
+    width: calc(50% - 24px); /* Adjusted width to fit better with padding */
+}
+.c .v #username {
+    top: 50%;
+}
+.c .v #password {
+    top: 65%;
+}
+.c .v .lb {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    color: rgba(0, 0, 0, 0.582);
+}
+.c .v .lb:active {
+    background:  #3b5998; 
+}

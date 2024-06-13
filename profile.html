@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <title>My Graphql</title>
+</head>
+<body>
+    <main class="profile">
+        <div class="sidebar">
+            <div class="profile-info">
+                <h3><i class='bx bx-user'></i> Profile</h3>
+                <p><i class='bx bx-user-circle'></i> First Name: <span id="userFirstName"></span></p>
+                <p><i class='bx bx-user-circle'></i> Last Name: <span id="userLastName"></span></p>
+                <p><i class='bx bx-user-pin'></i> Login: <span id="login"></span></p>
+                <p><i class='bx bx-envelope'></i> Email: <span id="email"></span></p>
+                <p><i class='bx bx-building'></i> Campus: <span id="campus"></span></p>
+                <p><i class='bx bx-stats'></i> Audit Ratio: <span id="auditRatio"></span></p>
+                <p><i class='bx bx-calendar'></i> Joined on: <span id="createdAt"></span></p>
+                <a id="logoutButton" class="logout-button" alt="logout">
+                    <span class="material-symbols-outlined">logout</span>
+                    Logout
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    Welcome, <span id="userLastName1"></span> <span id="userFirstName1"></span>!
+                </h2>
+            </header>
+           
+            <div class="statistics">
+                <!-- Div-01 data -->
+                <div class="div01">
+                    <h3><i class='bx bx-trophy'></i> Div-01 Statistics</h3>
+                    <p><i class='bx bx-bar-chart-alt-2'></i> XP: <span id="xpDiv01Amount"></span> <span>kB</span> </p>
+                    <p><i class='bx bx-layer'></i> Level: <span id="div01Level"></span></p>
+                </div>
+                <!-- Audits data -->
+                <div class="audits">
+                    <h3><i class='bx bx-check-shield'></i> Audits</h3>
+                    <p><i class='bx bx-check'></i> Audit done: <span id="auditDone"></span> <span>kB</span> </p>
+                    <p><i class='bx bx-check-circle'></i> Audit received: <span id="auditReceived"></span>  <span>kB</span> </p>
+                </div>
+                <!-- Projects done -->
+                <div class="projectsDone">
+                    <h3><i class='bx bx-folder-open'></i> Projects</h3>
+                    <p><i class='bx bx-task'></i> You've validated   <span id="projects"></span>   projects</p>
+                </div>
+            </div>
+            <!-- Graphs -->
+            <div class="graphs">
+                <!-- Completed Projects -->
+                <div class="completed-projects">
+                    <h2>Completed Projects</h2>
+                    <ul id="completedProjectsList">
+                        <!-- List items will be dynamically inserted here -->
+                    </ul>
+                </div>
+                <div class="secondGraph">
+                    <h2 class="graph-title">More about audits</h2>
+                    <div id="ratioGraph">
+                        <p><i class='bx bx-pie-chart-alt'></i> Audit Ratio: <span id="auditRatio"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="firstGraph">
+                <h2 class="graph-title">All Projects done</h2>
+                <div id="graph">
+                    <p>Hover over a bar for project details.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./assets/scripts/profile.js"></script>
+</body>
+</html>
