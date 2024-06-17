@@ -347,10 +347,12 @@ body {
 .c .t h1 {
     position: absolute;
     top: 55%;
+    color: #fff;
 }
 .c .t p {
     position: absolute;
     top: 65%;
+    color: #fff;
 }
 .c .v .z {
     position: absolute;
@@ -408,7 +410,7 @@ button {
     position: absolute;
     top: 80%;
     left: 20%;
-    color: rgba(0, 0, 0, 0.582);
+    color: #fff;
 }
 .c .v .lb:active {
     background:  #3b5998; 
